@@ -1,69 +1,55 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html xml:lang="en" lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Job Search</title>
-	<link href="theme/css/styles.css" rel="stylesheet" type="text/css" />
-	<link href="theme/css/faceted_search_theme.css" rel="stylesheet" type="text/css" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Hillsborough County - Career Section</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/@hcflgov/vue-html-wrapper@3.0.1/dist/HcHtmlWrapper.css">
 </head>
 <body>
-	
-	<!--Header-->
-	
-	
-<div id="header" class="jHeader">
-	<div id="header_container">
-		<div class="menu_toggle_hldr">
 
-		</div>
-		
-		<div id="logo_hldr">
-			<div class="logo">
-				
-					<div id="logo_inner">
-						<a href="https://www.hillsboroughcounty.org/">
-							<img src="theme/images/Logo_County.png" alt=" Sundt Careers" class="logo_img"></img>
-						</a>
-					</div>
-				
-				
-			</div>
-		</div>
-		<div id="nav_key_hldr">
-			<div id="header_content" class="jUserRefreshArea">
-				<div id="nav_hldr">
+  <div id="hc-main" class="d-flex flex-column">
+    <!-- header -->
+    <header>
+      <!-- https://www.w3.org/WAI/GL/2016/WD-WCAG20-TECHS-20160105/G1 -->
+      <nav is="hc-navbar" logo-href="https://hillsboroughcounty.org" skip-content-link="#main-content" class="v-card"></nav>
 
-</div>
+      <ol is="hc-banner" title="Career Section">
+        <li class="breadcrumb-item"><a href="https://hillsboroughcounty.org">Home</a></li>
+        <li class="breadcrumb-item"><a href="https://www.hillsboroughcounty.org/en/about-hillsborough/jobs">Jobs</a></li>
+      </ol>
+    </header>
 
-<!-- Removed header_key_holder include -->
+    <main id="main-content">
 
-			</div>
-		</div>
-	</div>
-</div>
-	
-	<!--Header-->
-	
-	<div id="container">
-		
-		<div id="content" class="taleo_details">
-			<div id="taleo_holder" class="content_body">
-				<insertcontent xmlns="http://www.taleo.com/templates" />
+      <div class="py-5">
+        <div class="container d-flex justify-content-center">
 
-			</div>
-		</div>
-		
-	</div>
-	
-	
-	<!-- Footer-->
-	
-	
-	
-	
+          <!-- Taleo content -->
+          <insertcontent xmlns="http://www.taleo.com/templates" />
 
+        </div>
+      </div>
 
+    </main>
+
+    <!-- footer -->
+    <footer is="hc-footer" class="mt-auto"></footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/vue@2.6.10/dist/vue.min.js"></script>
+  <script src="https://unpkg.com/@hcflgov/vue-html-wrapper@3.0.1/dist/HcHtmlWrapper.umd.min.js"></script>
+
+  <script type="text/javascript">
+  new Vue().$mount('#hc-main')
+  </script>
 
 </body>
 </html>
