@@ -1,0 +1,11 @@
+{
+  "name": "hc-taleo-career-section",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kevin McCarthy <mccarthyk@hcflgov.net>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
