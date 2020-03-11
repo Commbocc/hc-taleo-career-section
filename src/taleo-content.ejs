@@ -1,0 +1,2295 @@
+<div class="masterbody" id="facetedSearchBody">
+    <div class="header"></div>
+
+    <div class="menu"></div>
+    <div class="mainsection">
+        <div class="headersection">
+
+
+
+            <div id="headerPanelContainer" class="headerpanel">
+                <div class="userpanel">
+                    <h2 class="username">Welcome. You are not signed in.</h2>
+                </div>
+
+                <div class="right-header-info">
+
+
+                    <span id="header-actions-signed-out" class="header-actions metalink">
+                        <a id="signin-link" class="signed-in"
+                            href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl?ftlcompclass=LoginComponent">Sign
+                            In</a>
+                    </span>
+
+                </div>
+                <div style="clear:both;"></div>
+
+                <ul id="tabs" class="linkpanel">
+                    <li>
+                        <a id="jobsearch-link" class="selectedlink"
+                            href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl">Job
+                            Search</a>
+                    </li>
+
+
+                    <li>
+                        <a id="jobpage-link" class="link"
+                            href="https://hillsborough.taleo.net/careersection/county_external/mysubmissions.ftl">My
+                            Jobpage</a>
+                    </li>
+
+
+
+
+
+
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="sessionWarning" class="session-popup-window messagewarningpanel" role="alertdialog" aria-hidden="true"
+            aria-labelledby="warningID" aria-describedby="okResetID">
+            <div class="messagetitle" id="warningID">This service is set to disconnect automatically
+                after 60 minutes of inactivity. Your session will end in 20 minutes.</div>
+            <br>
+            <div class="messagetext" id="okResetID">Click OK to reset the timer to 60 minutes.</div>
+            <div class="popup-actions">
+                <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#" role="button"
+                    class="result-list-button" id="sessionWarningOK" title="Reset the timer">OK</a>
+            </div>
+        </div>
+
+        <div id="sessionTimeout" class="session-popup-window messagewarningpanel" role="alertdialog" aria-hidden="true"
+            aria-labelledby="timeoutID" aria-describedby="sessionTerminatedId">
+            <div class="messagetitle" id="timeoutID">You have been signed out.</div>
+            <br>
+            <div class="messagetext" id="sessionTerminatedId">This service is set to sign out after 60
+                minutes of inactivity.</div>
+            <div class="popup-actions">
+                <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#" role="button"
+                    class="result-list-button" id="sessionTimeoutOK">OK</a>
+            </div>
+        </div>
+
+
+
+
+        <div class="column165">
+            <div id="helpPanel" class="helppanel" role="dialog" aria-describedby="helpContentId"
+                aria-label="Help and Icon Legend">
+                <div class="helpTitle">
+                    <span class="helpDecorator" id="helpDecorator"></span>
+                    <button type="button" class="closeHelp" id="closeHelp">
+                        <img src="./index_files/icon_help_close.png" title="Close" alt="Close">
+                    </button>
+                </div>
+
+                <div class="helpContent" id="helpContentId">
+                    <div class="helpsubtitle">Search Tips</div>
+                    <div class="helplabel">You can search jobs by entering relevant data in the above
+                        search fields and by filtering the job list with additional criteria.</div>
+
+
+                    <div class="helpsubtitle">Saving searches</div>
+                    <div class="helplabel">You can save the current search by clicking "Save this
+                        Search". Searches are saved in the "My Saved Searches" section, under the "My
+                        Jobpage" tab.</div>
+
+
+
+
+
+                    <div class="helpsubtitle">Candidate Profile</div>
+                    <div class="helplabel">Take a few minutes to create or modify your employment
+                        profile and to specify your preferred working criteria for future openings
+                        matching your interests.
+                        <div class="helplink">
+                            <a id="profile-link"
+                                href="https://hillsborough.taleo.net/careersection/profile.jss?type=1&amp;portal=8116760849">Access
+                                my profile</a>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="legendpanel">
+                        <div class="legendtitle">Icon legend</div>
+
+
+                        <div class="legendlabel icon-added-to-job-cart">Added to the job cart</div>
+
+
+                        <div class="legendlabel icon-draft">Draft submission</div>
+                        <div class="legendlabel icon-already-applied-on">Completed submission</div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="jobsearch">
+            <div id="criteria-container">
+                <div class="topSearchPanel" id="searchPanel" valign="center">
+                    
+                    <div class="topSearchContainer">
+
+
+
+
+                        <div class="criteria-fields" id="criteriaFields">
+
+                            <div class="criteria-field">
+                                <label for="KEYWORD">
+                                    Keyword
+                                </label>
+                                <input type="text" class="criteriaFieldInput ui-autocomplete-input" id="KEYWORD"
+                                    isautosuggest="true" suggestid="1" isolf="false" isphrase="false" value=""
+                                    autocomplete="off">
+                                <input type="hidden" id="KEYWORD-olfid" value="">
+                            </div>
+
+                            <div class="criteria-field">
+                                <label for="JOB_TITLE">
+                                    Job Title
+                                </label>
+                                <input type="text" class="criteriaFieldInput ui-autocomplete-input" id="JOB_TITLE"
+                                    isautosuggest="true" suggestid="5" isolf="false" isphrase="true" value=""
+                                    autocomplete="off">
+                                <input type="hidden" id="JOB_TITLE-olfid" value="">
+                            </div>
+
+                            <div class="criteria-field">
+                                <label for="JOB_NUMBER">
+                                    Job Number
+                                </label>
+                                <input type="text" class="criteriaFieldInput" id="JOB_NUMBER" isautosuggest="false"
+                                    suggestid="" isolf="false" isphrase="false" value="">
+                                <input type="hidden" id="JOB_NUMBER-olfid" value="">
+                            </div>
+
+
+
+                            <div class="criteria-field search-button-container">
+                                <input id="search" type="button" class="search-button hidden-text-button"
+                                    aria-label="Search for jobs">
+                            </div>
+
+                            <div class="search-panel-links-container">
+                                <ul>
+                                    <li>
+                                        <a id="clearButton"
+                                            href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#">View
+                                            All Jobs</a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div id="advanced-search-panel-container" class="advanced-search-panel-container">
+                    <div id="advanced-search-padding-panel">
+                        <div class="advanced-search-top-panel">
+                            <span class="advanced-search-title" tabindex="0" aria-label="Advanced Job Search">
+                                Advanced Job Search
+                            </span>
+                            <button id="close-window-button" class="close-window-button" tabindex="0"
+                                style="background: none; border: none;font-size:100%" title="close"
+                                alt="close">×</button>
+                        </div>
+                        <br class="clear">
+                        <div class="advanced-search-criteria">
+
+                            <div class="advanced-search-row">
+
+                                <div class="criteria-widget" style="width: 33%">
+
+
+
+
+
+
+
+
+
+                                    <div class="olf-widget">
+                                        <div class="widget-title">
+                                            Organization
+                                        </div>
+
+                                        <div id="ORGANIZATION-olf-criteria-field">
+                                            <div id="ORGANIZATION-olf-0-div" class="olf-autocomplete-field"
+                                                style="display: block;">
+                                                <input type="text" size="20" id="ORGANIZATION-olf-0"
+                                                    title="ORGANIZATION" class="ui-autocomplete-input"
+                                                    autocomplete="off"><a id="ORGANIZATION-olf-0-remove-button"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    role="button" aria-label="close"
+                                                    class="remove-button-olf-widget">×</a><input type="hidden"
+                                                    id="ORGANIZATION-olf-0-olfid"></div>
+                                        </div>
+
+                                        <div id="ORGANIZATION-olf-add-button-div" class="add-olf-link">
+                                            <a id="ORGANIZATION-olf-add-button" class="olf-add-link"
+                                                href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                style="opacity: 1; cursor: pointer;">
+
+
+                                                Add Organization
+
+
+
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <script type="text/javascript">
+                                        CRITERIA_FIELDS_TO_REGISTER.push({
+                                            type: 'OLFCriteriaField',
+                                            id: 'ORGANIZATION',
+                                            fieldId: '6',
+                                            values: '{}',
+                                            suggestId: '4'
+                                        });
+                                    </script>
+
+
+
+
+                                </div>
+
+
+                                <div class="criteria-widget" style="width: 33%">
+
+
+
+
+
+
+
+
+
+                                    <div class="olf-widget">
+                                        <div class="widget-title">
+                                            Location
+                                        </div>
+
+                                        <div id="LOCATION-olf-criteria-field">
+                                            <div id="LOCATION-olf-0-div" class="olf-autocomplete-field"
+                                                style="display: block;"><input type="text" size="20" id="LOCATION-olf-0"
+                                                    title="LOCATION" class="ui-autocomplete-input" autocomplete="off"><a
+                                                    id="LOCATION-olf-0-remove-button"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    role="button" aria-label="close"
+                                                    class="remove-button-olf-widget">×</a><input type="hidden"
+                                                    id="LOCATION-olf-0-olfid"></div>
+                                        </div>
+
+                                        <div id="LOCATION-olf-add-button-div" class="add-olf-link">
+                                            <a id="LOCATION-olf-add-button" class="olf-add-link"
+                                                href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                style="cursor: pointer; opacity: 1;">
+
+                                                Add Location
+
+
+
+
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <script type="text/javascript">
+                                        CRITERIA_FIELDS_TO_REGISTER.push({
+                                            type: 'OLFCriteriaField',
+                                            id: 'LOCATION',
+                                            fieldId: '5',
+                                            values: '{}',
+                                            suggestId: '2'
+                                        });
+                                    </script>
+
+
+
+
+                                </div>
+
+
+                                <div class="criteria-widget" style="width: 33%">
+
+
+
+
+
+
+
+
+
+                                    <div class="olf-widget">
+                                        <div class="widget-title">
+                                            Job Field
+                                        </div>
+
+                                        <div id="JOB_FIELD-olf-criteria-field">
+                                            <div id="JOB_FIELD-olf-0-div" class="olf-autocomplete-field"
+                                                style="display: block;"><input type="text" size="20"
+                                                    id="JOB_FIELD-olf-0" title="JOB FIELD" class="ui-autocomplete-input"
+                                                    autocomplete="off"><a id="JOB_FIELD-olf-0-remove-button"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    role="button" aria-label="close"
+                                                    class="remove-button-olf-widget">×</a><input type="hidden"
+                                                    id="JOB_FIELD-olf-0-olfid"></div>
+                                        </div>
+
+                                        <div id="JOB_FIELD-olf-add-button-div" class="add-olf-link">
+                                            <a id="JOB_FIELD-olf-add-button" class="olf-add-link"
+                                                href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                style="cursor: pointer; opacity: 1;">
+
+
+
+                                                Add Job Field
+
+
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <script type="text/javascript">
+                                        CRITERIA_FIELDS_TO_REGISTER.push({
+                                            type: 'OLFCriteriaField',
+                                            id: 'JOB_FIELD',
+                                            fieldId: '1',
+                                            values: '{}',
+                                            suggestId: '3'
+                                        });
+                                    </script>
+
+
+
+
+                                </div>
+
+                                <br>
+
+
+                                <div class="criteria-widget" style="width: 33%">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div id="URGENT_JOB-checkbox-criteria" class="checkbox-widget">
+                                        <div class="widget-title">
+                                            Urgent Jobs
+                                        </div>
+                                        <fieldset class="criteria-options  no-border">
+
+
+
+
+
+
+
+
+                                            <input id="URGENT_JOB-1-option" type="checkbox" name="URGENT_JOB" value="1"
+                                                aria-label="Urgent Jobs : Urgent Jobs Only">
+                                            <span id="URGENT_JOB-1-option-desc" class="criteria-label-wrapper">
+                                                Urgent Jobs Only
+                                            </span>
+                                            <br>
+
+
+                                        </fieldset>
+                                    </div>
+
+                                    <script type="text/javascript">
+                                        CRITERIA_FIELDS_TO_REGISTER.push({
+                                            type: 'CheckboxCriteriaField',
+                                            id: 'URGENT_JOB',
+                                            fieldId: '24'
+                                        });
+                                    </script>
+
+
+
+
+                                </div>
+
+
+                                <div class="criteria-widget" style="width: 33%">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div id="EMPLOYEE_STATUS-checkbox-criteria" class="checkbox-widget">
+                                        <div class="widget-title">
+                                            Employee Status
+                                        </div>
+                                        <fieldset class="criteria-options  no-border">
+
+
+
+
+
+
+
+
+                                            <input id="EMPLOYEE_STATUS-1-option" type="checkbox" name="EMPLOYEE_STATUS"
+                                                value="1" aria-label="Employee Status : Regular">
+                                            <span id="EMPLOYEE_STATUS-1-option-desc" class="criteria-label-wrapper">
+                                                Regular
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="EMPLOYEE_STATUS-3-option" type="checkbox" name="EMPLOYEE_STATUS"
+                                                value="3" aria-label="Employee Status : Contractual">
+                                            <span id="EMPLOYEE_STATUS-3-option-desc" class="criteria-label-wrapper">
+                                                Contractual
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="EMPLOYEE_STATUS-4-option" type="checkbox" name="EMPLOYEE_STATUS"
+                                                value="4" aria-label="Employee Status : Temporary">
+                                            <span id="EMPLOYEE_STATUS-4-option-desc" class="criteria-label-wrapper">
+                                                Temporary
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="EMPLOYEE_STATUS-5-option" type="checkbox" name="EMPLOYEE_STATUS"
+                                                value="5" aria-label="Employee Status : Limited Term">
+                                            <span id="EMPLOYEE_STATUS-5-option-desc" class="criteria-label-wrapper">
+                                                Limited Term
+                                            </span>
+                                            <br>
+
+
+                                        </fieldset>
+                                    </div>
+
+                                    <script type="text/javascript">
+                                        CRITERIA_FIELDS_TO_REGISTER.push({
+                                            type: 'CheckboxCriteriaField',
+                                            id: 'EMPLOYEE_STATUS',
+                                            fieldId: '13'
+                                        });
+                                    </script>
+
+
+
+
+                                </div>
+
+
+                                <div class="criteria-widget" style="width: 33%">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div id="WILL_TRAVEL-checkbox-criteria" class="checkbox-widget">
+                                        <div class="widget-title">
+                                            Will Travel
+                                        </div>
+                                        <fieldset class="criteria-options  no-border">
+
+
+
+
+
+
+
+
+                                            <input id="WILL_TRAVEL-1-option" type="checkbox" name="WILL_TRAVEL"
+                                                value="1" aria-label="Will Travel : No">
+                                            <span id="WILL_TRAVEL-1-option-desc" class="criteria-label-wrapper">
+                                                No
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="WILL_TRAVEL-6-option" type="checkbox" name="WILL_TRAVEL"
+                                                value="6" aria-label="Will Travel : Yes, 5 % of the Time">
+                                            <span id="WILL_TRAVEL-6-option-desc" class="criteria-label-wrapper">
+                                                Yes, 5 % of the Time
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="WILL_TRAVEL-7-option" type="checkbox" name="WILL_TRAVEL"
+                                                value="7" aria-label="Will Travel : Yes, 10 % of the Time">
+                                            <span id="WILL_TRAVEL-7-option-desc" class="criteria-label-wrapper">
+                                                Yes, 10 % of the Time
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="WILL_TRAVEL-8-option" type="checkbox" name="WILL_TRAVEL"
+                                                value="8" aria-label="Will Travel : Yes, 15 % of the Time">
+                                            <span id="WILL_TRAVEL-8-option-desc" class="criteria-label-wrapper">
+                                                Yes, 15 % of the Time
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="WILL_TRAVEL-9-option" type="checkbox" name="WILL_TRAVEL"
+                                                value="9" aria-label="Will Travel : Yes, 20 % of the Time">
+                                            <span id="WILL_TRAVEL-9-option-desc" class="criteria-label-wrapper">
+                                                Yes, 20 % of the Time
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="WILL_TRAVEL-2-option" type="checkbox" name="WILL_TRAVEL"
+                                                value="2" aria-label="Will Travel : Yes, 25 % of the Time">
+                                            <span id="WILL_TRAVEL-2-option-desc" class="criteria-label-wrapper">
+                                                Yes, 25 % of the Time
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="WILL_TRAVEL-3-option" type="checkbox" name="WILL_TRAVEL"
+                                                value="3" aria-label="Will Travel : Yes, 50 % of the Time">
+                                            <span id="WILL_TRAVEL-3-option-desc" class="criteria-label-wrapper">
+                                                Yes, 50 % of the Time
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="WILL_TRAVEL-4-option" type="checkbox" name="WILL_TRAVEL"
+                                                value="4" aria-label="Will Travel : Yes, 75 % of the Time">
+                                            <span id="WILL_TRAVEL-4-option-desc" class="criteria-label-wrapper">
+                                                Yes, 75 % of the Time
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="WILL_TRAVEL-5-option" type="checkbox" name="WILL_TRAVEL"
+                                                value="5" aria-label="Will Travel : Yes, 100 % of the Time">
+                                            <span id="WILL_TRAVEL-5-option-desc" class="criteria-label-wrapper">
+                                                Yes, 100 % of the Time
+                                            </span>
+                                            <br>
+
+
+                                        </fieldset>
+                                    </div>
+
+                                    <script type="text/javascript">
+                                        CRITERIA_FIELDS_TO_REGISTER.push({
+                                            type: 'CheckboxCriteriaField',
+                                            id: 'WILL_TRAVEL',
+                                            fieldId: '18'
+                                        });
+                                    </script>
+
+
+
+
+                                </div>
+
+                                <br>
+
+
+                                <div class="criteria-widget" style="width: 33%">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <div id="JOB_SHIFT-checkbox-criteria" class="checkbox-widget">
+                                        <div class="widget-title">
+                                            Job Shift
+                                        </div>
+                                        <fieldset class="criteria-options  no-border">
+
+
+
+
+
+
+
+
+                                            <input id="JOB_SHIFT-1-option" type="checkbox" name="JOB_SHIFT" value="1"
+                                                aria-label="Job Shift : Day Job">
+                                            <span id="JOB_SHIFT-1-option-desc" class="criteria-label-wrapper">
+                                                Day Job
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="JOB_SHIFT-2-option" type="checkbox" name="JOB_SHIFT" value="2"
+                                                aria-label="Job Shift : Evening Job">
+                                            <span id="JOB_SHIFT-2-option-desc" class="criteria-label-wrapper">
+                                                Evening Job
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="JOB_SHIFT-3-option" type="checkbox" name="JOB_SHIFT" value="3"
+                                                aria-label="Job Shift : Night Job">
+                                            <span id="JOB_SHIFT-3-option-desc" class="criteria-label-wrapper">
+                                                Night Job
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="JOB_SHIFT-4-option" type="checkbox" name="JOB_SHIFT" value="4"
+                                                aria-label="Job Shift : On Call">
+                                            <span id="JOB_SHIFT-4-option-desc" class="criteria-label-wrapper">
+                                                On Call
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="JOB_SHIFT-5-option" type="checkbox" name="JOB_SHIFT" value="5"
+                                                aria-label="Job Shift : Variable">
+                                            <span id="JOB_SHIFT-5-option-desc" class="criteria-label-wrapper">
+                                                Variable
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="JOB_SHIFT-6-option" type="checkbox" name="JOB_SHIFT" value="6"
+                                                aria-label="Job Shift : Flex Time">
+                                            <span id="JOB_SHIFT-6-option-desc" class="criteria-label-wrapper">
+                                                Flex Time
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="JOB_SHIFT-7-option" type="checkbox" name="JOB_SHIFT" value="7"
+                                                aria-label="Job Shift : Weekend">
+                                            <span id="JOB_SHIFT-7-option-desc" class="criteria-label-wrapper">
+                                                Weekend
+                                            </span>
+                                            <br>
+
+
+
+
+
+
+
+
+
+                                            <input id="JOB_SHIFT-8-option" type="checkbox" name="JOB_SHIFT" value="8"
+                                                aria-label="Job Shift : Rotating">
+                                            <span id="JOB_SHIFT-8-option-desc" class="criteria-label-wrapper">
+                                                Rotating
+                                            </span>
+                                            <br>
+
+
+                                        </fieldset>
+                                    </div>
+
+                                    <script type="text/javascript">
+                                        CRITERIA_FIELDS_TO_REGISTER.push({
+                                            type: 'CheckboxCriteriaField',
+                                            id: 'JOB_SHIFT',
+                                            fieldId: '17'
+                                        });
+                                    </script>
+
+
+
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div id="advanced-search-buttons-container" class="advanced-search-buttons-container">
+                            <input id="clear-advanced-search-criteria" type="button"
+                                class="clear-advanced-search-criteria" value="Clear All">
+                            <input id="advanced-search-button" type="button" class="search-button"
+                                aria-label="Search for jobs">
+                        </div>
+
+                        <br class="clear">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="info-panel" id="infoPanel">
+                <div id="infoPanelContainer" class="subtitle">
+
+                    <div class="page-info-panel subtitle">
+                        <h1 class="info-panel-title">
+                            Job Openings
+                        </h1>
+                        <span class="paging-info paging-info-data" id="currentPageInfo">1 - 25 of
+                            71</span>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="leftLayout">
+                
+                <div id="filter-panel" class="filter-panel">
+
+                    <div id="filter-POSTING_DATE" class="filter-group">
+                        <object class="filter-group-config">
+                            <param name="name" value="Posting Date">
+                            <param name="asSelect" value="true">
+                            <param name="expanded" value="true">
+                            <param name="isOlf" value="false">
+                            <param name="code" value="POSTING_DATE">
+                            <param name="fieldId" value="7">
+                        </object>
+                        <div id="POSTING_DATE-header" class="filter-header filter-active"><span
+                                class="icon filter-colapse-open"></span><a
+                                href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                id="POSTING_DATE-link" role="button" aria-expanded="true" aria-disabled="false">Posting
+                                Date</a></div>
+                        <div id="POSTING_DATE-content" class="filter-group-content" style="">
+                            <div class="input-wrapper"><select id="POSTING_DATE-select">
+                                    <option id=""></option>
+                                    <option title="Today" id="1">Today</option>
+                                    <option title="Yesterday" id="2">Yesterday</option>
+                                    <option title="Last 7 Days" id="3">Last 7 Days</option>
+                                    <option title="Last 14 Days" id="4">Last 14 Days</option>
+                                    <option title="Last 21 Days" id="5">Last 21 Days</option>
+                                    <option title="Last 28 Days" id="6">Last 28 Days</option>
+                                </select></div>
+                        </div>
+                    </div>
+                    <div class="filterSeparator"></div>
+
+                    <div id="filter-LOCATION" class="filter-group">
+                        <object class="filter-group-config">
+                            <param name="name" value="Location">
+                            <param name="asSelect" value="false">
+                            <param name="expanded" value="true">
+                            <param name="isOlf" value="true">
+                            <param name="code" value="LOCATION">
+                            <param name="fieldId" value="5">
+                        </object>
+                        <div id="LOCATION-header" class="filter-header filter-active"><span
+                                class="icon filter-colapse-open"></span><a
+                                href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                id="LOCATION-link" role="button" aria-expanded="true" aria-disabled="false">Location</a>
+                        </div>
+                        <div id="LOCATION-content" class="filter-group-content" style="">
+                            <div role="group" aria-labelledby="fieldSetId-LOCATION-level-3">
+                                <div id="fieldSetId-LOCATION-level-3" class="hidden-audible">Region/City
+                                </div>
+                                <div id="LOCATION-level-3" class="filter-level-title">Region/City</div>
+                                <input id="LOCATION-level-3-item-0" type="checkbox" name="2116760849" title="Tampa"
+                                    class="filter-checkbox">
+                                <div class="label-wrapper"><a><label for="LOCATION-level-3-item-0"
+                                            class="checkbox-label">
+                                            <div class="checkboxp checkbox-unchecked">&nbsp;</div><span
+                                                class="valuesdiv"><span class="filter-text">Tampa</span><span
+                                                    class="filter-quantity">(58)</span></span>
+                                        </label></a></div><input id="LOCATION-level-3-item-1" type="checkbox"
+                                    name="1316760849" title="Gibsonton" class="filter-checkbox">
+                                <div class="label-wrapper"><a><label for="LOCATION-level-3-item-1"
+                                            class="checkbox-label">
+                                            <div class="checkboxp checkbox-unchecked">&nbsp;</div><span
+                                                class="valuesdiv"><span class="filter-text">Gibsonton</span><span
+                                                    class="filter-quantity">(5)</span></span>
+                                        </label></a></div><input id="LOCATION-level-3-item-2" type="checkbox"
+                                    name="316760849" title="Lithia" class="filter-checkbox">
+                                <div class="label-wrapper"><a><label for="LOCATION-level-3-item-2"
+                                            class="checkbox-label">
+                                            <div class="checkboxp checkbox-unchecked">&nbsp;</div><span
+                                                class="valuesdiv"><span class="filter-text">Lithia</span><span
+                                                    class="filter-quantity">(2)</span></span>
+                                        </label></a></div><input id="LOCATION-level-3-item-3" type="checkbox"
+                                    name="1016760849" title="Valrico" class="filter-checkbox">
+                                <div class="label-wrapper"><a><label for="LOCATION-level-3-item-3"
+                                            class="checkbox-label">
+                                            <div class="checkboxp checkbox-unchecked">&nbsp;</div><span
+                                                class="valuesdiv"><span class="filter-text">Valrico</span><span
+                                                    class="filter-quantity">(2)</span></span>
+                                        </label></a></div><input id="LOCATION-level-3-item-4" type="checkbox"
+                                    name="1216760849" title="Plant City" class="filter-checkbox">
+                                <div class="label-wrapper"><a><label for="LOCATION-level-3-item-4"
+                                            class="checkbox-label">
+                                            <div class="checkboxp checkbox-unchecked">&nbsp;</div><span
+                                                class="valuesdiv"><span class="filter-text">Plant
+                                                    City</span><span class="filter-quantity">(2)</span></span>
+                                        </label></a></div>
+                            </div>
+                            <div class="filter-link filter-link-show-more"><a href="javascript:void(0);"
+                                    id="LOCATION-moreless" class="filter-link-anchor">Show more...</a>
+                            </div>
+                            <div class="filter-link filter-link-see-all"><a href="javascript:void(0);"
+                                    id="LOCATION-seeallolf" class="filter-link-anchor">See all
+                                    locations</a></div>
+                        </div>
+                    </div>
+                    <div class="filterSeparator"></div>
+
+                    <div id="filter-JOB_FIELD" class="filter-group">
+                        <object class="filter-group-config">
+                            <param name="name" value="Job Field">
+                            <param name="asSelect" value="false">
+                            <param name="expanded" value="true">
+                            <param name="isOlf" value="true">
+                            <param name="code" value="JOB_FIELD">
+                            <param name="fieldId" value="1">
+                        </object>
+                        <div id="JOB_FIELD-header" class="filter-header filter-active"><span
+                                class="icon filter-colapse-open"></span><a
+                                href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                id="JOB_FIELD-link" role="button" aria-expanded="true" aria-disabled="false">Job
+                                Field</a></div>
+                        <div id="JOB_FIELD-content" class="filter-group-content" style="">
+                            <div role="group" aria-labelledby="fieldSetId-JOB_FIELD-level-1">
+                                <div id="fieldSetId-JOB_FIELD-level-1" class="hidden-audible">Category
+                                </div>
+                                <div id="JOB_FIELD-level-1" class="filter-level-title">Category</div>
+                                <input id="JOB_FIELD-level-1-item-0" type="checkbox" name="3116760849"
+                                    title="Parks/Recreation" class="filter-checkbox">
+                                <div class="label-wrapper"><a><label for="JOB_FIELD-level-1-item-0"
+                                            class="checkbox-label">
+                                            <div class="checkboxp checkbox-unchecked">&nbsp;</div><span
+                                                class="valuesdiv"><span class="filter-text">Parks/Recreation</span><span
+                                                    class="filter-quantity">(11)</span></span>
+                                        </label></a></div><input id="JOB_FIELD-level-1-item-1" type="checkbox"
+                                    name="4116760849" title="Information Technology" class="filter-checkbox">
+                                <div class="label-wrapper"><a><label for="JOB_FIELD-level-1-item-1"
+                                            class="checkbox-label">
+                                            <div class="checkboxp checkbox-unchecked">&nbsp;</div><span
+                                                class="valuesdiv"><span class="filter-text">Information
+                                                    Technology</span><span class="filter-quantity">(9)</span></span>
+                                        </label></a></div><input id="JOB_FIELD-level-1-item-2" type="checkbox"
+                                    name="2516760849" title="Trade Jobs" class="filter-checkbox">
+                                <div class="label-wrapper"><a><label for="JOB_FIELD-level-1-item-2"
+                                            class="checkbox-label">
+                                            <div class="checkboxp checkbox-unchecked">&nbsp;</div><span
+                                                class="valuesdiv"><span class="filter-text">Trade
+                                                    Jobs</span><span class="filter-quantity">(8)</span></span>
+                                        </label></a></div><input id="JOB_FIELD-level-1-item-3" type="checkbox"
+                                    name="3616760849" title="Engineering" class="filter-checkbox">
+                                <div class="label-wrapper"><a><label for="JOB_FIELD-level-1-item-3"
+                                            class="checkbox-label">
+                                            <div class="checkboxp checkbox-unchecked">&nbsp;</div><span
+                                                class="valuesdiv"><span class="filter-text">Engineering</span><span
+                                                    class="filter-quantity">(8)</span></span>
+                                        </label></a></div><input id="JOB_FIELD-level-1-item-4" type="checkbox"
+                                    name="1016760849" title="Business" class="filter-checkbox">
+                                <div class="label-wrapper"><a><label for="JOB_FIELD-level-1-item-4"
+                                            class="checkbox-label">
+                                            <div class="checkboxp checkbox-unchecked">&nbsp;</div><span
+                                                class="valuesdiv"><span class="filter-text">Business</span><span
+                                                    class="filter-quantity">(4)</span></span>
+                                        </label></a></div>
+                            </div>
+                            <div class="filter-link filter-link-show-more"><a href="javascript:void(0);"
+                                    id="JOB_FIELD-moreless" class="filter-link-anchor">Show more...</a>
+                            </div>
+                            <div class="filter-link filter-link-see-all"><a href="javascript:void(0);"
+                                    id="JOB_FIELD-seeallolf" class="filter-link-anchor">See all job
+                                    fields</a></div>
+                        </div>
+                    </div>
+                    <div class="filterSeparator"></div>
+
+                </div>
+                
+
+                <div id="seeAllOlfPanel" class="see-all-olf-panel masterbody">
+                    <div class="mainsection">
+                        <div id="title" class="see-all-olf-title headerpanel">
+                            <span id="showingWhat"></span>
+                            <span id="showingInfo"></span>
+                        </div>
+                        <div id="popupProgressIndicator" class="popup-progress-indicator"></div>
+                        <div id="table" class="see-all-olf-table"></div>
+                        <div id="filtersSelection" class="filter-top-panel-container">
+                            <div id="filtersSelectionPanel"></div>
+                        </div>
+                        <div id="actions" class="see-all-olf-actions">
+                            <span id="cancelAction" class="see-all-olf-cancel metalink2"><a
+                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#">Cancel</a></span>
+                            <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                id="addAction" class="see-all-olf-add result-list-button">Add</a>
+                        </div>
+                    </div>
+
+                    <div class="popup-window messagewarningpanel" id="selectionLimitDialog">
+                        <p id="selectionLimitTitle" class="messagetitle">Selection limit reached</p>
+                        <p id="selectionLimitMessage" class="messagetext"></p>
+                        <div class="popup-actions">
+                            <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                class="result-list-button" id="selectionLimitOK">OK</a>
+                        </div>
+                    </div>
+                    <div class="popup-overlay" id="dialogOverlay"></div>
+                </div>
+
+
+                <div class="jobListPanel" id="resultListPanel">
+                    
+                    <div class="filter-top-panel-container" id="filterTopPanel" style="display: none;">
+                        <div class="filter-top-panel">
+                            <ul class="filter-list" id="filterList"></ul>
+                        </div>
+
+                        <div class="clear-top-filter metalink2">
+                            <a id="clearButton" aria-label="Clear search criteria."
+                                href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                class="clear-button">Clear</a>
+                        </div>
+                    </div>
+                    <div id="listTopPanel" class="list-top-panel savecontentpanel">
+
+                        <span class="metalink2">
+                            <a aria-expanded="false" id="showSaveSearch" class="save-search"
+                                href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl?ftlcompclass=LoginComponent&amp;restore=true"
+                                title="Expand the &#39;Save this search&#39; section">
+                                Save this Search
+                            </a>
+                        </span>
+
+
+                        <span style="float: right;">
+
+
+                            <span class="metalink2">
+                                <label id="switchViewLinkAudibleDescription" class="hidden-audible">Job
+                                    list in single line view. Press ENTER to switch to multi line
+                                    view.</label>
+                                <a id="listFormatSwitch"
+                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                    class="list-format-switch"
+                                    aria-labelledby="switchViewLinkAudibleDescription">Single-line</a>
+                            </span>
+
+
+                            <span id="help" class="help">
+                                <button type="button" style="background: none; border: none;">
+                                    <img src="./index_files/ico-help.png" title="Access the online help"
+                                        alt="Access the online help">
+                                </button>
+                            </span>
+
+
+                        </span>
+
+                        <div style="clear:both;"></div>
+                        <div id="box2" class="list-top-panel-box">
+                            <div id="sortPanel" class="sort-panel">
+                                <label for="sortBySelect">
+                                    Sort by
+                                </label>
+                                <div style="display: block;">
+                                    <select id="sortBySelect" class="sort-dropdown">
+
+                                        <option id="SCHEDULE-sortfield" value="SCHEDULE" sortid="6" ascending="true"
+                                            descending="true">
+                                            Schedule
+                                        </option>
+
+                                        <option id="JOB_TITLE-sortfield" value="JOB_TITLE" sortid="5" ascending="true"
+                                            descending="true">
+                                            Job Title
+                                        </option>
+
+                                        <option id="UNPOSTING_DATE-sortfield" value="UNPOSTING_DATE" sortid="2"
+                                            ascending="true" descending="true">
+                                            Unposting Date
+                                        </option>
+
+                                        <option id="POSTING_DATE-sortfield" value="POSTING_DATE" sortid="1"
+                                            ascending="true" descending="true">
+                                            Posting Date
+                                        </option>
+
+                                        <option id="RELEVANCY-sortfield" value="RELEVANCY" sortid="3" ascending="false"
+                                            descending="true">
+                                            Relevancy
+                                        </option>
+
+                                        <option id="LOCATION-sortfield" value="LOCATION" sortid="4" ascending="true"
+                                            descending="true">
+                                            Location
+                                        </option>
+
+                                    </select>
+                                    <label for="sortingOrder" class="hidden-audible">Order</label>
+                                    <select id="sortingOrder" class="sort-dropdown" disabled="">
+                                        <option value="ascendingOrder" ascendingorder="true">Ascending
+                                        </option>
+                                        <option value="descendingOrder" ascendingorder="false">
+                                            Descending</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div style="clear:both;"></div>
+
+                        <div class="save-search-panel" id="saveSearchPanel">
+                            <p id="saveSearchDescription" class="text">Save this search so you do not
+                                have to select search criteria the next time you are looking for similar
+                                jobs.</p>
+                            <div class="input-panel">
+                                <span class="text">
+                                    <label for="saveSearchTitle">
+                                        Search Name
+                                    </label>
+                                </span>
+                                <input type="text" id="saveSearchTitle" class="save-search-title"
+                                    aria-describedby="saveSearchDescription" maxlength="200">
+                                <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                    role="button" id="saveSearchSave" class="result-list-button"
+                                    title="This will save this search with name entered">Save this
+                                    Search</a>
+                                <span class="metalink2">
+                                    <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                        id="saveSearchCancel" class="save-search-cancel">Cancel</a>
+                                </span>
+                            </div>
+                            <div class="list-link-panel metalink2">
+                                <a id="accesSaveSearchesLink"
+                                    href="https://hillsborough.taleo.net/careersection/county_external/mysearches.ftl"
+                                    class="acccess-save-searches">
+                                    Access My Saved Searches
+                                </a>
+                            </div>
+
+                            <div class="popup-window messagewarningpanel" id="overwriteSearchConfirmation"
+                                role="alertdialog" aria-hidden="true" aria-labelledby="overwriteId"
+                                aria-describedby="messageTextId">
+                                <p class="messagetitle" id="overwriteId">You are about to override a
+                                    search query and all of its content.</p>
+                                <p class="messagetext" id="messageTextId">Are you sure that you want to
+                                    override it?</p>
+                                <div class="popup-actions">
+                                    <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                        class="result-list-button" id="confirmSaveSearch" role="button">Confirm</a>
+                                    <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                        class="result-list-button" id="cancelSaveSearch" role="button">Cancel</a>
+                                </div>
+                            </div>
+                            <div class="popup-window messageerrorpanel" id="saveSearchError" role="alertdialog"
+                                aria-hidden="true" aria-labelledby="saveSearchErrorMessageId">
+                                <h class="messagetext" id="saveSearchErrorMessageId">You cannot save
+                                    this search because you have reached the maximum number of saved
+                                    searches allowed. Please delete or override an existing search
+                                    query.</h>
+                                <div class="popup-actions">
+                                    <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                        class="result-list-button" id="saveSearchErrorOk" role="button">OK</a>
+                                </div>
+                            </div>
+
+                            <div class="popup-window messageerrorpanel" id="saveSearchNoNameError" role="alertdialog"
+                                aria-hidden="true" aria-labelledby="saveSearchNoNameErrorMessageId">
+
+                                <p class="messagetext" id="saveSearchNoNameErrorMessageId">You must
+                                    specify a search query name.</p>
+                                <div class="popup-actions">
+                                    <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                        class="result-list-button" id="saveSearchNoNameErrorOk" role="button">OK</a>
+                                </div>
+
+                            </div>
+
+                            <div class="popup-window messageerrorpanel" id="saveSearchLengthError" role="alertdialog"
+                                aria-hidden="true" aria-labelledby="saveSearchLengthErrorMessageId">
+                                <p id="saveSearchLengthErrorMessageId" class="messagetext">The search
+                                    name exceeds the maximum length allowed (200).</p>
+                                <div class="popup-actions">
+                                    <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                        class="result-list-button" id="saveSearchLengthErrorOk" role="button">OK</a>
+                                </div>
+                            </div>
+                            <div class="close-button-container">
+                                <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                    id="closeButton" class="close-button" role="button">
+                                    <img src="./index_files/sort-arrow-ascending.png" alt="Collapse this section">
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div id="searchresults">
+                        <span id="reloadMessage" role="alert" class="hidden-audible" aria-hidden="true">The list of
+                            jobs has reloaded. 1 – 25 of 71. Page
+                            1</span>
+                        <div style="clear:both;"></div>
+                        <div id="jobsTableContainer" style="display: none;">
+                            <table id="jobs" class="table" summary="Job Openings">
+                                <thead>
+                                    <tr class="headers subtitle">
+                                        <th scope="col"><span class="hidden-audible">Icons</span></th>
+
+                                        <th width="50%" scope="col">Requisition Title</th>
+
+                                        <th width="30%" scope="col">Location</th>
+
+                                        <th width="20%" scope="col">Posting Date</th>
+
+                                        <th scope="col"> Actions </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="jobsbody">
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="multilineListContainer">
+                            <ul id="jobList" class="multiline-list">
+                                <li id="job10753">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000005P&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Business Analyst (Development Services)">Business
+                                                    Analyst (Development Services)</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10753"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10753"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10753"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10753"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000005P&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Business Analyst (Development Services)"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10753"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job11006">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=20000074&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Solid Waste Equipment Operator.">Solid Waste
+                                                    Equipment Operator.</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Lithia</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=11006"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart11006"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled11006"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_11006"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=20000074&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Solid Waste Equipment Operator."
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg11006"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10951">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=20000077&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Solid Waste Transfer Equipment Operator">Solid
+                                                    Waste Transfer Equipment Operator</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Gibsonton</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10951"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10951"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10951"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10951"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=20000077&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Solid Waste Transfer Equipment Operator"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10951"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10975">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000007I&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Planning &amp; Zoning Tech (Bilingual Spanish)">Planning
+                                                    &amp; Zoning Tech (Bilingual
+                                                    Spanish)</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10975"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10975"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10975"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10975"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000007I&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Planning &amp; Zoning Tech (Bilingual Spanish)"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10975"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job11009">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000007H&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Fleet Technician">Fleet
+                                                    Technician</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=11009"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart11009"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled11009"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_11009"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000007H&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Fleet Technician"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg11009"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10612">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000003R&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Customer Service Representative II (Pet Resources)">Customer
+                                                    Service Representative II (Pet
+                                                    Resources)</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10612"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10612"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10612"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10612"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000003R&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Customer Service Representative II (Pet Resources)"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10612"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10928">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000006K&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Accounting Clerk">Accounting
+                                                    Clerk</a></span><span> </span><span>-</span><span>
+                                            </span><span>Full-time</span></div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10928"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10928"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10928"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10928"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000006K&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Accounting Clerk"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10928"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10966">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000006V&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Engineering Technician">Engineering
+                                                    Technician</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10966"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10966"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10966"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10966"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000006V&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Engineering Technician"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10966"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10979">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=20000082&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Training Specialist">Training
+                                                    Specialist</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10979"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10979"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10979"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10979"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=20000082&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Training Specialist"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10979"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10990">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000007F&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="015576.C.Board Recording Secretary.v01">015576.C.Board
+                                                    Recording Secretary.v01</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10990"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10990"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10990"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10990"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000007F&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="015576.C.Board Recording Secretary.v01"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10990"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10787">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000005I&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Pet Resources Rescue/Foster Coordinator">Pet
+                                                    Resources Rescue/Foster Coordinator</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10787"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10787"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10787"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10787"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000005I&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Pet Resources Rescue/Foster Coordinator"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10787"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10756">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=20000062&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Accounting Clerk">Accounting
+                                                    Clerk</a></span><span> </span><span>-</span><span>
+                                            </span><span>Full-time</span></div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10756"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10756"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10756"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10756"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=20000062&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Accounting Clerk"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10756"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10710">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000005A&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Center Coordinator">Center
+                                                    Coordinator</a></span><span>
+                                            </span><span>-</span><span> </span><span>Part-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10710"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10710"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10710"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10710"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000005A&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Center Coordinator"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10710"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10867">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000006L&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="013638.C.Customer Service Specialist I.v04">013638.C.Customer
+                                                    Service Specialist I.v04</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10867"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10867"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10867"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10867"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000006L&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="013638.C.Customer Service Specialist I.v04"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10867"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job11029">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000007X&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Administrative Specialist">Administrative
+                                                    Specialist</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=11029"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart11029"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled11029"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_11029"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000007X&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Administrative Specialist"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg11029"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10991">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000007Z&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Human Resources Support Technician (Bilingual Required)">Human
+                                                    Resources Support Technician (Bilingual
+                                                    Required)</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10991"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10991"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10991"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10991"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000007Z&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Human Resources Support Technician (Bilingual Required)"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10991"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10758">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000006A&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Recreation Program Supervisor">Recreation
+                                                    Program Supervisor</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10758"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10758"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10758"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10758"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000006A&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Recreation Program Supervisor"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10758"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10927">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000006J&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Utilities Plant Operator (Trainee) (Wastewater)">Utilities
+                                                    Plant Operator (Trainee)
+                                                    (Wastewater)</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Dover</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10927"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10927"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10927"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10927"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000006J&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Utilities Plant Operator (Trainee) (Wastewater)"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10927"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10846">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000006B&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Environmental Lands Management Technician">Environmental
+                                                    Lands Management Technician</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Plant City</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10846"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10846"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10846"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10846"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000006B&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Environmental Lands Management Technician"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10846"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job11031">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=20000083&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Multi-Trades Worker-Sports Turf">Multi-Trades
+                                                    Worker-Sports Turf</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=11031"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart11031"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled11031"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_11031"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=20000083&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Multi-Trades Worker-Sports Turf"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg11031"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10886">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000006D&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Construction Equipment Operator">Construction
+                                                    Equipment Operator</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Valrico</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10886"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10886"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10886"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10886"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000006D&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Construction Equipment Operator"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10886"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10749">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000005F&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Multi-Trades Worker">Multi-Trades
+                                                    Worker</a></span><span> </span><span>-</span><span>
+                                            </span><span>Full-time</span></div>
+                                        <div><span>United States-Florida-Valrico</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10749"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10749"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10749"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10749"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000005F&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Multi-Trades Worker"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10749"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10814">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=20000067&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Environmental Lands Management Specialist-Wildland Fire Assistant Crew Leader">Environmental
+                                                    Lands Management Specialist-Wildland Fire Assistant
+                                                    Crew Leader</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Plant City</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10814"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10814"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10814"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10814"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=20000067&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Environmental Lands Management Specialist-Wildland Fire Assistant Crew Leader"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10814"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10952">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000007B&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Service Delivery Manager">Service Delivery
+                                                    Manager</a></span><span> </span><span>-</span><span>
+                                            </span><span>Full-time</span></div>
+                                        <div><span>United States-Florida-Tampa</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10952"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10952"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10952"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10952"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000007B&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Service Delivery Manager"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10952"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li id="job10948">
+                                    <div class="multiline-icon-container"></div>
+                                    <div class="multiline-data-container" style="margin-right: 69.6406px;">
+                                        <div><span><a
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobdetail.ftl?job=2000006Z&amp;tz=GMT-04%3A00&amp;tzname=America%2FNew_York"
+                                                    title="Solid Waste Equipment Operator">Solid Waste
+                                                    Equipment Operator</a></span><span>
+                                            </span><span>-</span><span> </span><span>Full-time</span>
+                                        </div>
+                                        <div><span>United States-Florida-Gibsonton</span></div>
+                                    </div>
+                                    <div class="multiline-action-container"><a class="result-list-button"
+                                            href="https://hillsborough.taleo.net/careersection/application.jss?type=1&amp;lang=en&amp;portal=8116760849&amp;reqNo=10948"
+                                            role="button">Apply</a></div>
+                                    <div style="clear:both;"></div>
+                                    <div class="additional-action-buttons-container" style="top: -999999px;">
+                                        <ul role="menu" class="multiline-button-list">
+                                            <li class="add-to-jobcart metalink2" role="menuitem"><a
+                                                    id="add-to-jobcart10948"
+                                                    href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                                    title="Save Job">Save Job</a><span id="add-to-jobcart-disabled10948"
+                                                    tabindex="0" aria-disabled="true" class="hidden-element">Save
+                                                    Job</span></li>
+                                            <li class="li_addThis metalink2" role="menuitem"><a
+                                                    id="_cs_addthis_resultListPanel_10948"
+                                                    class="addthis_button_compact"
+                                                    addthis:url="https://hillsborough.taleo.net/careersection/jobdetail.ftl?job=2000006Z&amp;tz=GMT-04:00&amp;tzname=America/New_York&amp;lang=en"
+                                                    addthis:title="Solid Waste Equipment Operator"
+                                                    addthis:description="Click the link to view the complete job description."
+                                                    addthis:ui_language="en" title="Share"><img id="shareImg10948"
+                                                        src="./index_files/ico-share-16.png"
+                                                        alt=""><span>Share</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="noResults" style="display: none;">
+                            <p class="no-results-info text">No jobs correspond to the specified
+                                criteria.</p>
+                            <ul class="no-result-option-list">
+                                <li class="text">To improve your search results, remove one or more
+                                    filters.</li>
+                                <li class="metalink2"><a id="viewAllJobsLink"
+                                        href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#">You
+                                        can also view all available job openings.</a></li>
+                            </ul>
+                        </div>
+
+
+
+                        <div style="clear: both;"></div>
+
+                        <div id="jobPager" class="pagerpanel">
+                            <span class="pagersectionpanel">
+                                <span class="pagerlinkoff">
+                                    <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                        id="previous" title="Go to the previous page" class="navigation-link-disabled"
+                                        aria-disabled="true">Previous</a>
+                                </span>
+                            </span>
+                            <span class="pagersectionpanel">
+                                <ul class="pager">
+                                    <li class="navigation-link-disabled"><a
+                                            href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                            title="Go to page 1" aria-disabled="true">1</a></li>
+                                    <li class="pagerlink"><a
+                                            href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                            title="Go to page 2" aria-disabled="false">2</a></li>
+                                    <li class="pagerlink"><a
+                                            href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                            title="Go to page 3" aria-disabled="false">3</a></li>
+                                </ul>
+                            </span>
+                            <span class="pagersectionpanel">
+                                <span class="pagerlink">
+                                    <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                        id="next" title="Go to the next page" aria-disabled="false">Next</a>
+                                </span>
+                            </span>
+                        </div>
+                        <div id="progressIndicator" class="progress-indicator mastercontentpanel"
+                            style="width: 0px; height: 200px; top: 594.797px; left: 1227.86px;"></div>
+
+                        <div class="popup-window messageerrorpanel" id="addToJobCartError" role="alertdialog"
+                            aria-hidden="true" aria-labelledby="jobCartErrorID">
+                            <p class="messagetext" id="jobCartErrorID">You cannot add this item to the
+                                job cart, because you have already reached the maximum number of items
+                                allowed in the job cart (25). You must first delete an existing item to
+                                be able to add a new one.</p>
+                            <div class="popup-actions">
+                                <a href="https://hillsborough.taleo.net/careersection/county_external/jobsearch.ftl#"
+                                    class="result-list-button" id="addToJobCartErrorOk" role="button">OK</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <br class="clear">
+
+    </div>
+    <div class="popup-overlay" id="popupOverlay" style="display: none;">
+    </div>
+
+
+    <div class="footer">
+
+
+
+
+
+    </div>
+</div>
