@@ -19,9 +19,10 @@
 
 <body class="d-flex flex-column">
 
-	<header class="header">
-		<!-- navbar -->
-		<nav id="hc-nav" class="navbar navbar-expand-sm navbar-light bg-white v-card" aria-label="Navbar">
+	<!-- header -->
+	<div>
+		<!-- navbar nav -->
+		<div id="hc-nav" class="navbar navbar-expand-sm navbar-light bg-white v-card">
 			<div class="container-fluid">
 
 				<!-- skip to main content for 508 compliance -->
@@ -50,10 +51,10 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
+		</div>
 
-		<section class="jumbotron-bg-cover" style="background: url(theme/images/JoeChilluraPark.jpg);"
-			aria-labelledby="page-title">
+		<!-- jumbotron -->
+		<div class="jumbotron-bg-cover" style="background: url(theme/images/JoeChilluraPark.jpg);">
 			<!-- page title & breadcrumbs -->
 			<div class="pt-sm-5 d-flex align-items-end h-100 gradient-diag-primary">
 				<div class="container pt-4 px-sm-4 bg-white">
@@ -61,28 +62,30 @@
 						Career Section
 					</h1>
 					<hr class="bg-dark m-0 pt-1">
-					<nav aria-label="Breadcrumb Navigation">
+					<!-- breadcrumb nav -->
+					<div>
 						<ol class="breadcrumb small mb-0">
 							<li class="breadcrumb-item"><a href="https://hillsboroughcounty.org">Home</a></li>
 							<li class="breadcrumb-item"><a href="https://www.hillsboroughcounty.org/jobs">Jobs</a></li>
 							<li aria-current="page" class="breadcrumb-item active">Career Section</li>
 						</ol>
-					</nav>
+					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
-	</header>
+	</div>
 
-	<main id="main-content" class="py-5">
+	<!-- main -->
+	<div id="main-content" class="py-5">
 		<div class="container">
 			<!---- include('../src/taleo-content') !--->
 			<insertcontent xmlns="http://www.taleo.com/templates"></insertcontent>
 		</div>
-	</main>
+	</div>
 
-	<section class="py-5 bg-light mt-auto" aria-label="Disclaimers">
-		<!-- disclaimers -->
+	<!-- disclaimers -->
+	<div class="py-5 bg-light mt-auto">
 		<div class="container small text-muted">
 			<p>The mission of Hillsborough County government is to provide effective quality service at a reasonable
 				cost with courtesy, integrity and accountability in a manner that protects and enhances the quality
@@ -97,9 +100,10 @@
 				preference.</p>
 			<p>EOE/AA/ADA/DFW/VP</p>
 		</div>
-	</section>
+	</div>
 
-	<footer id="hc-footer" class="bg-secondary text-white py-5" aria-label="Website Footer">
+	<!-- website footer -->
+	<div id="hc-footer" class="bg-secondary text-white py-5">
 		<div class="container">
 			<div class="row align-items-center text-center">
 				<div class="col-lg-6 col-md-12 mb-4 order-md-2">
@@ -190,7 +194,7 @@
 				</a>
 			</p>
 		</div>
-	</footer>
+	</div>
 
 	<!---- include('../src/post-footer') !--->
 
