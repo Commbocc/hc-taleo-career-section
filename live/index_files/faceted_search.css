@@ -1,0 +1,283 @@
+@charset "utf-8";
+/* CSS Document */
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a img {
+	border-style: none;
+}
+
+.mainsection {
+	margin : 5px;
+	font-family: "helvetica neue",arial,verdana,sans-serif;
+	font-size: 1em;
+}
+
+.topSearchPanel {
+	background-color: black;
+	color: white;
+}
+
+.topSearchContainer {
+	padding-top: 5px;
+	padding-left: 20px;
+	margin-bottom: 2px;
+	overflow: auto;
+	padding-bottom: 3px;
+}
+
+/* LAYOUT */
+/* DEFAULT LEFT LAYOUT */
+.filter-panel {	float: left; width: 17%; }
+.jobListPanel  { width: 82%; float: right; }
+.filterSeparator { clear: left; }
+
+/* RIGHT LAYOUT */
+.rightLayout .filter-panel { float: right; }
+.rightLayout .jobListPanel { float: left; }
+.rightLayout .filterSeparator {	clear: right; }
+
+/* OFF LAYOUT */
+.offLayout .filter-panel { display: none; }
+.offLayout .jobListPanel { float: left; width: 100%; }
+
+
+
+#keyword, #location {
+	height: 18px;
+	width: 230px;
+}
+
+#keywordLabel {
+	font-weight:bold;
+}
+
+#locationLabel {
+	margin-left: 35px;
+	font-weight:bold;
+}
+
+.headersection {
+	position: relative;
+}
+
+.search-button {
+	margin-left: 5px;
+	height: 28px;
+	
+	background-image: url(../images/ico-search.png); 
+    background-color: #989898;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    cursor: pointer;        
+    height: 25px;
+    width: 70px;
+    padding: 8px 16px;    
+    vertical-align: middle; 
+    -moz-border-radius: 4px;
+	border-radius: 4px;
+	border-color: #B2B1B2;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.search-button[disabled]{
+	cursor: default;
+	opacity:0.5;
+  	filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.criteria-fields {
+	white-space: nowrap;
+}
+
+.criteria-field {
+	float: left;
+	padding-right: 20px;
+	line-height: 2em;
+}
+
+.criteriaFieldInput::-ms-clear {
+	display: none;
+}
+
+.search-button-container {
+	width: 15%;
+}
+
+.search-panel-links-container {
+	float: right;
+	margin-right: 10px;
+	text-align: right;
+}
+
+.search-panel-links-container ul {
+	margin: 0px 0px 0px 0px;
+}
+
+.search-panel-links-container li {
+	list-style-type: none;
+	font-size: 0.8em;	
+}
+
+.search-panel-links-container li a {
+	display: block;
+}
+
+.ui-autocomplete-loading { 
+	background: white url('../images/ui-anim_basic_16x16.gif') right center no-repeat; 
+}
+
+/***** POPUPS ******/
+.popup-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.popup-window {
+	border: 1px silver solid;
+	display: none;
+	z-index: 1001;
+}
+
+.popup-window .popup-actions {
+	height: 30px;
+	text-align: center;
+}
+
+.session-popup-window {
+	border: 1px silver solid;
+	display: none;
+	z-index: 3000 !important;
+}
+
+.session-popup-window .popup-actions {
+	height: 30px;
+	text-align: center;
+}
+
+.messagewarningpanel {
+	padding: 5px;
+}
+
+.messageerrorpanel {
+	padding: 5px;
+	width: 500px;
+}
+
+/***** HELP ******/
+.helppanel {
+	position:absolute; 
+	top: 200px; 
+	z-index:4; 
+	width: 250px;
+	display: none;
+	border-color: #B2B1B2;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+}
+
+.helpTitle {
+	background-color: #F7F7F7;
+  	border-bottom: 1px solid #B2B1B2;
+    font-size: 0.8em;
+    margin: 0 0 2px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+
+.helpsubtitle {
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.helplabel {
+	font-size: 0.8em;
+	margin-bottom: 10px;
+}
+
+.legendlabel {
+	font-size: 0.8em;
+ 	padding-bottom: 2px;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+.legendpanel {
+	margin-top: 40px;
+}
+
+.helpContent {
+	padding: 5px;
+}
+
+.help {
+	float:left;
+	height: 16px;
+	width: 16px;
+	margin-right:10px;
+	font-weight:bold; 
+	cursor: pointer;
+	display: block;
+}
+
+.closeHelp {
+    float:right;
+    margin-top: -15px;
+    background: none;
+    border: none;
+}
+
+.helpDecorator {
+    margin-left:10px;
+    height: 16px;
+    width: 16px;
+    background: url(../images/ico-help.png) top left no-repeat;
+    display: block;
+}
+
+
+.helpToolTip {
+    color: #fff;
+    background:#1d1d1d;
+    display:none;
+    padding:10px;
+    position:absolute;    
+    z-index:1000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.clear {
+	clear: both;
+}
+
+.hidden-audible
+{
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#facetedSearchBody h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    display: inline;
+}

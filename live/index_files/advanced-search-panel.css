@@ -1,0 +1,145 @@
+.advanced-search-panel-container {
+	position: absolute;
+	z-index: 10;
+	display: none;
+	width: 100%;
+}
+
+#advanced-search-padding-panel {
+	padding: 15px;	
+}
+
+.advanced-search-title {
+	font-weight: bold;
+	float: left;
+}
+
+.advanced-search-buttons-container {
+	float: right;
+}
+
+.clear-advanced-search-criteria {
+    background-color: #989898;
+    cursor: pointer;        
+    height: 25px;
+    vertical-align: middle; 
+    -moz-border-radius: 4px;
+	border-radius: 4px;
+	border-color: #B2B1B2;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-appearance: none;
+}
+
+.close-window-button {
+	float: right;
+	cursor: pointer;
+}
+
+.ui-autocomplete {
+	z-index: 2000 !important;
+}
+
+.advanced-search-criteria {
+	width: 100%;
+}
+
+.radio-widget {
+	font-family: sans-serif;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: table-cell;
+	overflow: hidden;
+}
+
+.checkbox-widget {
+	font-family: sans-serif;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: table-cell;
+	overflow: hidden;
+}
+
+.text-widget {
+	font-family: sans-serif;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: table-cell;
+	overflow: hidden;
+}
+
+.select-widget {
+	font-family: sans-serif;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: table-cell;
+	overflow: hidden;
+}
+
+.widget-selector {
+	width: 100%;
+}
+
+.widget-title {
+	font-size: 0.76em;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.criteria-options { 
+	font-size: 0.78em;
+	margin-left: 4px;
+	margin-right: 2px;
+}
+
+.no-border {
+	border: none;
+}
+
+.advanced-search-row {
+	width: 100%;
+	white-space: nowrap;
+}
+
+.criteria-label-wrapper {
+	margin-bottom: 4px;
+}
+
+.widget-input {
+	margin-right: 10px;
+}
+
+.criteria-widget {
+	margin-top: 15px;
+	display: inline-block;
+	vertical-align: top;
+	white-space: normal;
+	
+	/* For IE 7 */
+	zoom: 1;
+	*display: inline;
+}
+
+.remove-button-olf-widget {
+	cursor: pointer;
+	display: none;
+	color: black;
+}
+
+.add-button-div-olf-widget {
+	height: 20px;
+}
+
+.olf-autocomplete-field {
+	display: none;
+	white-space: nowrap;
+}
+
+.add-olf-link {
+	font-size: 0.8em;
+}
+
+.olf-add-link {
+	float: left;
+}

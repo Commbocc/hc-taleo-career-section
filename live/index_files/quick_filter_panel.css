@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+/* Grey levels:	#4D4D4D #808080 #D2D2D2 */
+
+.filter-group {
+	font-family: sans-serif;
+	text-decoration: none;
+	border-top: gray 1px solid;
+	margin-bottom: 10px;
+	display: block;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+.filter-group-config {
+	display: none;
+}
+
+.filter-group select {
+	border: 1px solid #D2D2D2;
+	color: #4D4D4D;
+	width: 100%;
+}
+
+.filter-group a {
+	color: #0000FF;
+	text-decoration: none;
+}
+
+.filter-header {
+	font-size: 0.76em;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.filter-active a, .filter-active span {
+	vertical-align: top;
+	color: #000000;	
+	cursor: pointer;	
+}
+
+.filter-inactive a, .filter-inactive span {
+	vertical-align: top;
+	color: grey;
+	cursor: default;	
+}
+
+.filter-group-content {
+	font-size: 0.78em;
+	margin-bottom: 10px;
+	margin-left: 4px;
+	margin-right: 2px;
+}
+
+.language-filter-group-content {
+    font-size: 0.78em;
+    margin-bottom: 10px;
+    margin-right: 2px;
+}
+
+
+.filter-group-content input[type="text"] {
+	border: 1px solid #D2D2D2;
+	color: #4D4D4D;
+	width: 100%;
+	margin-top: 5px;
+    -webkit-appearance: none;
+}
+
+.filter-link {
+	text-decoration: none;
+	margin-top: 5px;
+}
+
+.filter-link-anchor {
+	color: #0000FF;
+	cursor: pointer;
+}
+
+.input-wrapper {
+	margin-right: 10px;
+}
+
+.language-input-wrapper {
+    margin : 0px;
+}
+
+/*** Checkbox Filters */
+.checkboxp {
+	width: 18px;
+	min-width: 18px;
+	min-height: 14px;
+	display: table-cell;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.valuesdiv {
+	display: table-cell;
+	cursor: pointer;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.filter-checkbox {
+	position: fixed;
+	left: -9999px;
+	top: -9999px;
+	opacity: 0;
+}
+
+.label-wrapper {
+	margin-bottom: 4px;
+	display: block;
+}
+
+.checkbox-label-focused {
+    outline: 1px dotted #6e6e6e;
+}
+
+.checkbox-label {
+    display: block;
+}
+
+.checkbox-unchecked {
+	background: url("../images/checkbox-unchecked.png") left top no-repeat;
+}
+
+.checkbox-checked {
+	background: url("../images/checkbox-checked.png") left top no-repeat;
+}
+
+.filter-text {
+	color: #4D4D4D;
+	display: inline;
+	word-wrap: break-word;
+}
+
+.filter-quantity {
+	margin-left: 0.18em;
+	color: #808080;
+}
+
+/* Checkbox Filters - End ***/
+.filter-option {
+	font-size: 1em;
+}
+
+.icon {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+
+.filter-colapse-inactive {
+	background-image: url(../images/filter-arrow-inactive.png);
+	background-position: 3px 2px;
+}
+
+.filter-colapse-close {
+	background-image: url(../images/filter-arrow-collapse.png);
+	background-position: 3px 2px;
+}
+
+.filter-colapse-open {
+	background-image: url(../images/filter-arrow-expand.png);
+	background-position: 2px 3px;
+}
+
+.filter-level-title {
+	color: #000000;
+	font-weight: bold;
+	font-size: 0.9em;
+	margin-bottom: 5px;
+}

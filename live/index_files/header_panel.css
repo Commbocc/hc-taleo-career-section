@@ -1,0 +1,109 @@
+.headerpanel {
+	background-color: #DEDEDE; 
+	height: 65px;
+	position: relative;
+}
+
+.userpanel {
+	float: left;
+	padding: 10px 0px 0px 10px;
+	font-weight: bold;
+}
+
+.right-header-info {
+	float: right;
+	padding: 15px 20px 0px 0px;
+}
+
+.header-actions {
+	margin-right: 10px;
+}
+
+.username-button {
+	background: url(../images/arr_down.png) no-repeat center right;
+	padding: 6px 18px 6px 10px; 
+	font-size: 0.8em;
+	color: #000000;
+	font-weight: bold;
+}
+
+.jobcart-link {
+	background: url(../images/ico-cart.png) no-repeat center left; 
+	font-size: 0.8em;
+	padding: 0px 0px 0px 15px;
+}
+
+.linkpanel {
+	position: absolute;
+	bottom: 0px;
+	float: left;
+	padding: 0 0 0 1em;
+	margin: 0;
+	list-style: none;
+	line-height: 1.1em;
+}
+
+.linkpanel LI {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.linkpanel A {
+	display: block;
+	color: #400;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.8em;
+	background: #f7f7f7;
+	margin-right: 6px;
+	padding: 0.25em 1em;
+	border: 1px solid #B2B1B2;
+}
+
+.linkpanel A:hover {
+	text-decoration: underline;
+}
+
+.linkpanel A.selectedlink {
+	background-color: #FAF1D1;
+	border-bottom-color: transparent;
+}
+
+.linkpanel A.selectedlink:hover {
+	text-decoration: none;
+}
+
+/*****	DROPDOWN LIST WITH ACTIONS LINK **********/
+
+.open .dropdown-list-header {
+	background-color: #FFF;
+	padding: 10px;
+	border: 1px solid;
+	border-color: #999;
+	min-width: 150px;
+	
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.open .dropdown-list-header li {
+	list-style: none;
+}
+
+.open .dropdown-list-header a {
+	font-size: 0.8em;
+	color: #000;
+}
+
+.header-actions-hr {
+	border: none; 
+	background-color: #CCC; 
+	height: 1px; 
+}
+
+.signout-link {
+	font-weight: bold;
+}

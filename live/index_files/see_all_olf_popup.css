@@ -1,0 +1,164 @@
+.see-all-olf-panel {
+	position: absolute;
+	z-index: 1001;
+	width: 600px;
+	display: none;
+	border: 1px solid #B2B1B2;
+}
+
+.see-all-olf-panel-extended {
+    position: absolute;
+    z-index: 1001;
+    width: 840px;
+    display: none;
+    border: 1px solid #B2B1B2;
+}
+
+.see-all-olf-title {
+	padding: 10px 10px 0;
+}
+
+.see-all-olf-table {
+	min-height: 372px;
+}
+
+.see-all-olf-actions {
+    padding: 15px 10px;
+    height: 27px;
+}
+
+.see-all-olf-txt-bold {
+	font-weight: bold;
+}
+
+.see-all-olf-add {
+	float: right;
+	font-size: 0.8em;
+	cursor: pointer;
+}
+
+.see-all-olf-cancel {
+	float: left;
+	font-size: 0.8em;
+}
+
+
+.clear {
+	clear: both;
+}
+
+.popup-progress-indicator {
+	background: url("../images/ajax-loader.gif") no-repeat scroll center
+		150px white;
+	position: absolute;
+}
+
+.dataTables_filter {
+	padding: 10px;
+}
+
+.dataTables_processing {
+	text-align: center;
+}
+
+.dataTables_scrollBody {
+	border-color: #A2A1A2;
+	border-style: solid;
+	border-width: 1px 0px;
+	height: 270px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.dataTables_scrollBody thead {
+	visibility: hidden;
+}
+
+.dataTables_scrollHead {
+    overflow : hidden;
+    position : relative;
+}
+
+.dataTables_scrollFoot {
+    overflow : hidden;
+}
+
+.dataTables_empty {
+	padding-left: 45px!important;
+	vertical-align: middle;
+}
+
+.dataTable {
+	table-layout: fixed;
+	word-wrap:break-word;
+	/* for Safari */
+	word-break: break-word;
+}
+
+.dataTable tr {
+	height: 28px;
+	font-size: 0.9em;
+}
+
+.dataTable tr td {
+	padding: 0px 5px;
+}
+
+.dataTable tr th {
+	padding-left: 20px;
+	text-align: left;
+}
+
+.sorting {
+	background: url('../images/sort-arrow-both.png') no-repeat left center;
+}
+
+.sorting_asc {
+	background: url('../images/sort-arrow-ascending.png') no-repeat left center;
+}
+
+.sorting_desc {
+	background: url('../images/sort-arrow-descending.png') no-repeat left center;
+}
+
+.clearFilter {
+	position: relative;
+	background: white;
+	padding: 1px;
+	border: 1px solid #D2D2D2;
+}
+
+.clearFilter input {
+	border: none;
+	border-width: 0;
+    outline: medium none;
+    padding-right: 3px;
+    top: -1px;
+    position: relative;
+}
+
+/* IE10 specific - hide browser's 'x' button */
+.clearFilter input::-ms-clear {
+    display: none;
+}
+
+.clearFilter span {
+	display: inline-block;
+	position: relative;
+    top: 5px;
+    *top: 0px !important;
+    right: 0px;
+    width: 18px;
+    height: 20px;
+    cursor: text;
+}
+
+.showXButton {
+	background: url("../images/ico-remove.png") no-repeat scroll center center transparent;
+	cursor: pointer !important;
+}
+
+.hideXButton {
+	background: transparent;
+}

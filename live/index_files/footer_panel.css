@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+
+.footeraction .footeractionpanel .rightPanel
+{
+	text-align: right;
+	padding: 4px 10px 4px 10px;
+	font-size: 0.78em;
+}
