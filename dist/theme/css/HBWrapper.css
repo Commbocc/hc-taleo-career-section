@@ -1,3 +1,13 @@
+ /* Taeleo Customizations */
+
+ #main-content * {
+    font-size: initial;
+ }
+ 
+ .hc-jumbo-chillura {
+    background: url('../images/JoeChilluraPark.jpg');
+ }
+
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400i,700|Encode+Sans:600);.font-serif{font-family:serif!important}#hc-nav-search-input-group>.form-control,.font-accent,h1,h2,h3,h4,h5,h6{font-family:Encode Sans,sans-serif!important}
 
 /*!
